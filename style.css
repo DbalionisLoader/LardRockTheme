@@ -7,3 +7,7 @@ Tags: Single page theme, responsive, ACF
 Author: Dovydas Balionis 
 Author URI: https://dovydasbalionis.co.uk/
 */
+
+body{
+    background-color: blue;
+}
