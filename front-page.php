@@ -17,10 +17,15 @@
                 }
             }
         ?>
-
+        <div>
+       
+ 
+   
+       
 
     </article>
-
+  <h2><?php echo esc_html( get_field('test_field') ); ?></h2>
+  <p><?php the_field('test_field'); ?></p>
 <!-- Fetch footer - found in footer.php -->    
 <?php 
     get_footer();
