@@ -5,8 +5,8 @@
     <meta name="description" content="Black Template">
      <title>Tetlow Auto's Mobile Mechanic</title>
     <meta name="author" content="https://dovydasbalionis.co.uk">
-    <!-- Tab icon should go here -->
-    <!-- <link rel="shortcut icon" type="image/svg+xml" href="assets/images/portfavcon-coder.svg"> -->
+    <!-- Tab/fav icon should go here - CHANGE to official icon later -->
+     <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/assets/images/portfavcon-coder.svg"> 
     <!-- Global Theme CSS - find lardrock_reg_styles function in functions.php to edit -->
     <?php
     wp_head();
@@ -25,10 +25,23 @@
             </button>
        
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+            <!-- Add dynamic wordpress menu - PRIMARY - DISABLED -->
+            <!-- items wrap surround the individual menu items with html
+                 Need to look up how to fully replace all classes for all menu item tags - custom walkers
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary',
+                        'items-wrap' => '<ul id="" class="navbar-nav">%3$s</ul>' 
+
+                    )
+                ); -->
+           
+            <ul class="navbar-nav">
                 <!-- Space space out nav links but only for desktop  -->
                 <li class="nav-item px-lg-3">
-                    <a class="nav-link " href="">Services</a>
+                    <a class="nav-link" href="">Services</a>
                 </li>
                 <li class="nav-item px-lg-3 ">
                     <a class="nav-link " href="/about">About us</a>

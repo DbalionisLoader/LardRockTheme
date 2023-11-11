@@ -6,6 +6,17 @@ function lardrock_theme_support(){
 }
 //add_action('document_title_parts','lardrock_theme_support'); - DISABLED 
 
+//Add dynamic menus function
+function lardrock_menus_locations(){
+   $locations = array(
+      'primary' => "Primary Navbar Menu",
+      'footer'  => "Footer Menu"
+   );
+   register_nav_menus($locations);
+}
+//Add lardrock_menus_locations during init step
+add_action('init','lardrock_menus_locations');
+
 // Add global styles to wp_head function
 // array argument controls the order of css files loading  
 // PARAMS:
