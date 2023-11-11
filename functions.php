@@ -1,4 +1,11 @@
 <?php
+
+//Add dynamic automatic wordpress title tag support - DISABLED - need attention
+function lardrock_theme_support(){
+   add_theme_support('title-tag');
+}
+//add_action('document_title_parts','lardrock_theme_support'); - DISABLED 
+
 // Add global styles to wp_head function
 // array argument controls the order of css files loading  
 // PARAMS:

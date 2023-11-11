@@ -17,6 +17,7 @@ Author URI: https://dovydasbalionis.co.uk/
     --secondary-color: #2ecc71;
     --accent-color: #e74c3c;
     --secondary-accent-color: #fdb525;
+    --text-white-color:  #ffffff;
 
     /* #002872 - dark blue
         #011540  - darker blue
@@ -68,7 +69,7 @@ a:hover {
     text-decoration: underline;
   }
 
-/* HEADER CSS */
+/* +++ HEADER CSS +++*/
 
 .custom-background{
     height: 100%; 
@@ -106,3 +107,19 @@ a:hover {
     font-size: 1.375rem ;
     font-weight: 450;
 }
+
+/* +++ FOOTER CSS +++ */
+
+.footer-wrap{
+    background-color: var(--primary-color);
+}
+
+.foot-item, .foot-item a, footer h5 {
+    color: var(--text-white-color) !important ;
+}
+
+footer h5{
+   font-weight: 600;
+}
+
+
