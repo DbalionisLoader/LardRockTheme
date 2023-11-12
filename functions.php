@@ -32,11 +32,13 @@ add_action('init','lardrock_menus_locations');
 function lardrock_reg_styles(){
    // Dynamic version param
    $version = wp_get_theme()->get('Version');
-   //Get global style.css sheet from local dir
-   wp_enqueue_style( 'lardrock_global_style', get_template_directory_uri() . "/style.css", array('lardrock_bootstrap_style'), $version, 'all' );
+ 
    //Get bootstrap styles from CDN - TODO: convert to a local dir critical styles only for for speed boost
    wp_enqueue_style( 'lardrock_bootstrap_style', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css", array(), '5.3.2', 'all' );
-   //Bootstrap Icons
+   //Bootstrap Icons style
+   wp_enqueue_style( 'lardrock_bootstrap_icon-style', "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css", array('lardrock_bootstrap_style'), '1.11.1', 'all' );  
+   //Get global style.css sheet from local dir
+   wp_enqueue_style( 'lardrock_global_style', get_template_directory_uri() . "/style.css", array('lardrock_bootstrap_style','lardrock_bootstrap_icon-style'), $version, 'all' );
 }
 
 // Add js scripts to wp_head function

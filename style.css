@@ -187,6 +187,13 @@ a:hover {
 .custom-card-body p {
     font-size: 16px;
 }
+
+
+/* +++ TESTIMONIAL SECTION +++ */
+.icon-flipped {
+   transform: rotateY(180deg);
+} 
+
 /* +++ FOOTER CSS +++ */
 
 .footer-wrap{
