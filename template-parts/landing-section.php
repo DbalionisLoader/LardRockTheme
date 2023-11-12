@@ -40,14 +40,14 @@
 
 <section>
 <div class="container pt-5">
-  <div class="text-center"><h2 class="text-dark">Customer Testimonials</h2></div>
+  <div class="text-center mb-5"><h2 class="text-dark">Customer Testimonials</h2></div>
 <!-- Carousel wrapper start here -->
-<div id="carouselExample" class="carousel slide text-center" data-bs-ride="true" data-bs-theme="dark">
+<div id="carouselExample" class="carousel slide text-center" data-bs-ride="carousel" data-bs-theme="dark">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item px-4 active">
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
-          <h5 class="mb-3">Courtney Cally</h5>
+     
           <p class="text-dark">
             <i class="bi bi-quote pe-2 "></i>
             There is nowhere better than Tetlows Autos. Never fail to get the job done, diagnostics and then fix is so quick, easy and always affordable. Work is always carried out to a high standard. Thanks Gareth for fixing my baby! She’s driving like a dream 💨   
@@ -56,7 +56,8 @@
             </svg>
           </p>
         </div>
-      </div>
+      </div>     
+      <h5 class="mb-3">Courtney Cally</h5>
       <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
         <li></li>
         <li><i class="bi bi-star-fill"></i></li>
@@ -66,10 +67,10 @@
         <li><i class="bi bi-star-fill"></i></li>
       </ul>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item px-4 ">
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
-          <h5 class="mb-3">Pollyanna Plumstead</h5>
+       
           <p class="text-dark">
             <i class="bi bi-quote pe-2"></i>
             So grateful to Gareth for sorting my car when it had an oil leak issue - his communication was great, the service he provided was professional & my car seems so much better. Many thanks!
@@ -78,7 +79,8 @@
             </svg>
           </p>
         </div>
-      </div>
+      </div>   
+      <h5 class="mb-3">Pollyanna Plumstead</h5>
       <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
         <li><i class="bi bi-star-fill"></i></li>
         <li><i class="bi bi-star-fill"></i></li>
@@ -87,11 +89,11 @@
         <li><i class="bi bi-star-fill"></i></li>
       </ul>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item px-4 ">
       
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
-          <h5 class="mb-3">Tony TR</h5>
+         
       
           <p class="text-dark">
             <i class="bi bi-quote pe-2"></i>
@@ -102,7 +104,8 @@
             </svg>
           </p>
         </div>
-      </div>
+      </div> 
+      <h5 class="mb-3">Tony TR</h5>
       <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
        <li><i class="bi bi-star-fill"></i></li>
         <li><i class="bi bi-star-fill"></i></li>
@@ -112,12 +115,12 @@
       </ul>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+  <button class="carousel-control-prev d-none d-lg-block " type="button" data-bs-target="#carouselExample"
   data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+  <button class="carousel-control-next d-none  d-lg-block " type="button" data-bs-target="#carouselExample"
   data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
