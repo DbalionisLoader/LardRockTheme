@@ -11,7 +11,7 @@ function lardrock_theme_support(){
 // Name of custom size,
 // Width and heigh of image,
 // Crop the image to specifc dimenstion (true/false)
-add_image_size( 'custom-thumbnail', 50, 50, true );
+add_image_size( 'custom-thumbnail', 60, 60, true );
 
 
 //Add dynamic menus function
@@ -36,6 +36,7 @@ function lardrock_reg_styles(){
    wp_enqueue_style( 'lardrock_global_style', get_template_directory_uri() . "/style.css", array('lardrock_bootstrap_style'), $version, 'all' );
    //Get bootstrap styles from CDN - TODO: convert to a local dir critical styles only for for speed boost
    wp_enqueue_style( 'lardrock_bootstrap_style', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css", array(), '5.3.2', 'all' );
+   //Bootstrap Icons
 }
 
 // Add js scripts to wp_head function
