@@ -6,6 +6,14 @@ function lardrock_theme_support(){
 }
 //add_action('document_title_parts','lardrock_theme_support'); - DISABLED 
 
+//Add custom wp_get_attachment_image image size function
+// PARAMS:
+// Name of custom size,
+// Width and heigh of image,
+// Crop the image to specifc dimenstion (true/false)
+add_image_size( 'custom-thumbnail', 50, 50, true );
+
+
 //Add dynamic menus function
 function lardrock_menus_locations(){
    $locations = array(
