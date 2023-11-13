@@ -236,6 +236,10 @@ a:hover {
     transition: var(--transition-duration);
 }
 
+/* .call-image{
+    max-width: 400px;
+} */
+
 /* Reduce font sizes for mobile */
 @media (max-width: 990px ) {
     .call-box h2{

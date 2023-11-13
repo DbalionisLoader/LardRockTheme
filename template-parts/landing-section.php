@@ -146,7 +146,9 @@
         <h4>For prompt auto support ring on: </h4>
         <div class="highlight-number">0750 210 1046</div>
       </div>
-      <div class="col"></div>
+      <div class="col">
+        <img class="img-fluid d-none d-lg-block call-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/van-placeholder.png" alt="Image of a van">
+      </div>
     </div>
   </div>
 </section>
