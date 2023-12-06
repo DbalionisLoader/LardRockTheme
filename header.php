@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,7 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blur">
         <div class="container d-flex justify-content-between align-items-center py-2">
             <a class="navbar-brand text-light" href="/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tet-autos-black.png" class="header-logo" alt="Tetlow Auto's Logo">

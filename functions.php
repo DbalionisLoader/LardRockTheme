@@ -49,7 +49,7 @@ function lardrock_reg_js_scripts(){
    $version = wp_get_theme()->get('Version');
    
    //Get main.js script from local dir
-   wp_enqueue_script( 'lardrock_main_js_script', get_template_directory_uri() . "/assets/js/main.js", array(), $version,true );
+   wp_enqueue_script( 'lardrock_main_js_script', get_template_directory_uri()."/assets/js/main.js", array(), $version,true );
    
    //Get bootstrap script from CDN - TODO: convert to a local dir for critical scripts only for speed boost
    wp_enqueue_script( 'lardrock_bootstrap_js_script', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js", array(), '5.3.2',true);

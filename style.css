@@ -87,6 +87,10 @@ a:hover {
     height: 100px;
 }
 
+.bg-dark-blur {
+    background-color: #002872;
+}
+
 @media (max-width: 990px ) {
     .header-logo{
         width: 80px; 
@@ -119,6 +123,7 @@ a:hover {
     background-position: center;
     height: 50vh;
     transition: var(--transition-duration);
+    min-height: 350px;
     
 }
 
@@ -177,6 +182,7 @@ a:hover {
     line-height: 1.5;
 }
 
+
 /* ** CARD STYLE ** */
 
 
@@ -188,6 +194,42 @@ a:hover {
     font-size: 16px;
 }
 
+/* +++ TESTIMONIAL SECTION +++ */
+
+.about-wrap{
+    position: relative;
+/*  hero section background image */
+    width: 100%; 
+    /* Height on the section -  */
+    height: 400px; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    transition: margin 0.3s ease; 
+}
+
+.about-wrap::before{
+    content: '';
+    position: absolute; 
+    /* The offset is all 0 to cover the full container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Opacity must be 41% */
+    background-color: rgba(0, 0, 0, 0.41); 
+    z-index: 1; 
+}
+
+.hero-wrap p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.about-image img{
+    width: 450px ;
+}
 
 /* +++ TESTIMONIAL SECTION +++ */
 .icon-flipped {
@@ -199,9 +241,14 @@ a:hover {
     overflow: hidden;
 }
 
+.testimonial{
+    background-color: var(--secondary-background-color);
+
+}
+
 /* +++ CALL TO ACTION BOX SECTION +++ */
 .call-box {
-    background-color: var(--secondary-accent-color);
+    background-color:#f2a306f2 ;
     color: var(--text-black-color);
     /* A */
 }
@@ -236,9 +283,13 @@ a:hover {
     transition: var(--transition-duration);
 }
 
-/* .call-image{
-    max-width: 400px;
+
+/* 
+Override image fluid max width 
 } */
+.call-image{
+    max-width: 350px !important;
+}
 
 /* Reduce font sizes for mobile */
 @media (max-width: 990px ) {
